@@ -541,6 +541,14 @@ footer a:hover {
 }
 
 /* Responsive */
+/* Mobile: Reset grid positioning to stack blocks naturally */
+@media (max-width: 639px) {
+  .bento-item {
+    grid-column: auto !important;
+    grid-row: auto !important;
+  }
+}
+
 @media (min-width: 640px) {
   .bento-grid { grid-template-columns: repeat(2, 1fr); }
   .col-span-2 { grid-column: span 2; }
